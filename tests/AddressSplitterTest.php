@@ -520,6 +520,19 @@ class AddressSplitterTest extends \PHPUnit_Framework_TestCase
                     'additionToAddress2' => '℅ West Area Computing'
                 )
             ),
+            array(
+                'Hauptstraße 27 Haus 1',
+                array(
+                    'additionToAddress1' => '',
+                    'streetName'         => 'Hauptstraße',
+                    'houseNumber'        => '27',
+                    'houseNumberParts'   => array(
+                        'base' => '27',
+                        'extension' => ''
+                    ),
+                    'additionToAddress2' => 'Haus 1'
+                )
+            )
         );
     }
 
